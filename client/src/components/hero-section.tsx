@@ -54,7 +54,8 @@ export default function HeroSection() {
               onClick={() => {
                 // Create a downloadable PDF link
                 const link = document.createElement('a');
-                link.href = '/pdfs/GitCheatSheet.pdf'; // This would be replaced with actual PDF URL
+                //link.href = '/pdfs/GitCheatSheet.pdf'; // This would be replaced with actual PDF URL
+                link.href = `${import.meta.env.BASE_URL}pdfs/GitCheatSheet.pdf`;
                 link.download = 'Rohit_Kumar_Cloud_Engineer_Resume.pdf';
                 link.click();
               }}
