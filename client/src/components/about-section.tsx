@@ -67,7 +67,8 @@ export default function AboutSection() {
           <div className="relative">
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="/images/about.jpg" 
+                //src="/images/about.jpg" 
+               src = {`${import.meta.env.BASE_URL}images/about.jpg`}
                 alt="Rohit Kumar - Cloud Engineer" 
                 className="w-full h-auto object-cover"
               />
