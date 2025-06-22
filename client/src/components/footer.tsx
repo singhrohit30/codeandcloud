@@ -27,9 +27,9 @@ export default function Footer() {
   ];
 
   return (
-    <footer 
+    <footer
       className="py-12 border-t"
-      style={{ 
+      style={{
         background: "hsl(var(--portfolio-primary))",
         borderColor: "hsl(215 28% 17% / 0.5)"
       }}
@@ -42,7 +42,7 @@ export default function Footer() {
               Creating digital experiences that make a difference, one line of code at a time.
             </p>
           </div>
-          
+
           <div className="flex justify-center space-x-6 mb-8">
             {navigationLinks.map((link) => (
               <button
@@ -54,12 +54,14 @@ export default function Footer() {
               </button>
             ))}
           </div>
-          
+
           <div className="flex justify-center space-x-4 mb-8">
             {socialLinks.map((link, index) => (
               <a
                 key={index}
                 href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="portfolio-text-muted hover:portfolio-accent transition-colors"
                 title={link.name}
               >
@@ -67,8 +69,8 @@ export default function Footer() {
               </a>
             ))}
           </div>
-          
-          <div 
+
+          <div
             className="border-t pt-8"
             style={{ borderColor: "hsl(215 28% 17% / 0.5)" }}
           >

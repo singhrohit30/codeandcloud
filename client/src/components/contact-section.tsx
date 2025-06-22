@@ -47,7 +47,7 @@ export default function ContactSection() {
         title: "Success!",
         description: result.message,
       });
-      
+
       // Reset the submitted state after 5 seconds
       setTimeout(() => setIsSubmitted(false), 5000);
     },
@@ -80,15 +80,15 @@ export default function ContactSection() {
             Ready to collaborate? Let's create something amazing together
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div className="space-y-8">
             <h3 className="text-2xl font-semibold portfolio-accent mb-6">Let's Connect</h3>
-            
+
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
-                <div 
+                <div
                   className="p-3 rounded-lg"
                   style={{ background: "hsl(var(--portfolio-accent) / 0.2)" }}
                 >
@@ -99,9 +99,9 @@ export default function ContactSection() {
                   <p className="portfolio-text-muted">rkrohit487@email.com</p>
                 </div>
               </div>
-              
+
               <div className="flex items-center space-x-4">
-                <div 
+                <div
                   className="p-3 rounded-lg"
                   style={{ background: "hsl(var(--portfolio-accent) / 0.2)" }}
                 >
@@ -112,9 +112,9 @@ export default function ContactSection() {
                   <p className="portfolio-text-muted">+91 (555) 123-4567</p>
                 </div>
               </div>
-              
+
               <div className="flex items-center space-x-4">
-                <div 
+                <div
                   className="p-3 rounded-lg"
                   style={{ background: "hsl(var(--portfolio-accent) / 0.2)" }}
                 >
@@ -126,7 +126,7 @@ export default function ContactSection() {
                 </div>
               </div>
             </div>
-            
+
             {/* Social Media Links */}
             <div className="pt-8">
               <h4 className="font-semibold mb-4">Follow Me</h4>
@@ -135,8 +135,10 @@ export default function ContactSection() {
                   <a
                     key={index}
                     href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-3 rounded-lg transition-all duration-300 transform hover:scale-110"
-                    style={{ 
+                    style={{
                       background: "hsl(var(--portfolio-accent) / 0.2)",
                       color: "hsl(var(--portfolio-text-primary))"
                     }}
@@ -156,11 +158,11 @@ export default function ContactSection() {
               </div>
             </div>
           </div>
-          
+
           {/* Contact Form */}
           <div className="portfolio-bg-primary rounded-xl p-8 shadow-xl">
             {isSubmitted ? (
-              <div 
+              <div
                 className="p-4 rounded-lg border"
                 style={{
                   background: "hsl(134 61% 41% / 0.2)",
@@ -209,7 +211,7 @@ export default function ContactSection() {
                       )}
                     />
                   </div>
-                  
+
                   <FormField
                     control={form.control}
                     name="email"
@@ -227,7 +229,7 @@ export default function ContactSection() {
                       </FormItem>
                     )}
                   />
-                  
+
                   <FormField
                     control={form.control}
                     name="subject"
@@ -244,7 +246,7 @@ export default function ContactSection() {
                       </FormItem>
                     )}
                   />
-                  
+
                   <FormField
                     control={form.control}
                     name="message"
@@ -262,7 +264,7 @@ export default function ContactSection() {
                       </FormItem>
                     )}
                   />
-                  
+
                   <Button
                     type="submit"
                     disabled={contactMutation.isPending}
