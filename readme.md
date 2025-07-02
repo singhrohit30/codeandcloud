@@ -40,7 +40,7 @@ Contributions are welcome! Feel free to open issues or submit PRs to improve exp
 
 ## 🧑‍💻 Author
 
-- [Your Name](https://github.com/singhrohit30)
+- [Rohit](https://github.com/singhrohit30)
 - [LinkedIn](https://linkedin.com/in/iamrohitsingh)
 
 ---
